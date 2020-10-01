@@ -7,59 +7,79 @@
   <meta charset="utf-8">
 
   <style>
+    * {
+      border: thin lightgray dashed;
+      box-sizing: border-box;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .button {
       color: darkblue; 
-      border: 3px darkblue solid;
-      border-radius: 15px; 
-      padding: 5px 10px; 
+      border: 1px darkblue solid;
+      border-radius: 5px; 
+      display: inline-block; 
+      width: 100%;
       text-decoration: none;">
-      }
+    }
     
     .player-card {
       color: green;
-      border: 5x, green dotted;
-      width: 30%
-      }
+      border: 3px green dotted;
+      width: 35%
+    }
     
     .computer-card {
-      color: green;
-      border: 5x, green dotted;
-      width: 30%      
-      }
+      color: red;
+      border: 3px red dotted;
+      width: 35%      
+    }
+
+    .one-third {
+      width: 33%
+    }
 
   </style>
 
 </head>
 
 <body>
-  <div>
-    <a class="button" href="/rock">
-      Play Rock
-    </a>
+  <div class="row">
+    <div class="one-third">
+      <a class="button" href="/rock">
+        Play Rock
+      </a>
+    </div>
+
+    <div class="one-third">
+      <a class="button" href="/paper">
+        Play Paper
+      </a>
+    </div>
+
+    <div class="one-third">
+      <a class="button" href="/scissors">
+        Play Scissors
+      </a>
+    </div>
   </div>
 
-  <div>
-    <a class="button" href="/paper">
-      Play Paper
-    </a>
-  </div>
 
-  <div>
-    <a class="button" href="/scissors">
-      Play Scissors
-    </a>
-  </div>
-
-  <div class="player-card">
-    <h2 style="color: lightgreen; font-size: 48px;">
-      We played rock!
-    </h2>
-  </div>
-  
-  <div class="computer-card">
-    <h2 style="color: lightblue; font-size: 48px; text-decoration: underline;">
-      They played paper!
-    </h2>
+  <div class="row">
+    <div class="player-card">
+      <h2>
+        We played rock!
+      </h2>
+    </div>
+    
+    <div class="computer-card">
+      <h2>
+        They played paper!
+      </h2>
+    </div>
   </div>
 
   <h2>
